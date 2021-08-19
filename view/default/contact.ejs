@@ -1,0 +1,36 @@
+<head>
+    <%- include("../partial/head.ejs") %>
+</head>
+
+<body>
+    <%- include("../partial/navbar.ejs") %>
+        <div class="container " style="margin-top: 150px; position: static;">
+            <div class="row">
+                <div class="col-6 offset-3 bg-secondary">
+                    <form action="/contactdata" method="POST">
+                        <div class="row justify-content-around  text-light pt-5 pb-3">
+                            <div class="col-5">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Your Name *" name="fullname" required class="form-control form-rounded" id="">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" placeholder="Email Address *" name="email" required class="form-control form-rounded" id="" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Your Phone number *" name="phonenumber" required class="form-control form-rounded" id="">
+                                </div>
+
+                                <button type="submit" class="btn btn-danger px-5 form-rounded">Submit</button>
+                            </div>
+                            <div class="col-5">
+                                <div class="mb-3">
+                                    <textarea class="form-control form-rounded" id="" name="message" placeholder="Your Message" required rows="6"></textarea> </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+</body>
