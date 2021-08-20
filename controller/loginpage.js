@@ -12,13 +12,13 @@ exports.logindata = (req, res, next) => {
                     bcd = logindata[i].loginpassword
                         // console.log(abc)
                         // console.log(bcd)
-
                 }
+
                 realemail = "darshan@gmail.com";
                 realpassword = "darshan"
 
                 if (realemail == abc && realpassword == bcd) {
-                    res.redirect("/adminnews")
+                    res.render("admin/dashboard.ejs")
                 } else {
                     // console.log(abc)
                     // console.log(bcd)

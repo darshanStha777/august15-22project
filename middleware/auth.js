@@ -18,7 +18,7 @@ exports.logindata = (req, res, next) => {
                 realpassword = "darshan"
 
                 if (realemail == abc && realpassword == bcd) {
-                    res.redirect("/adminnews")
+                    res.redirect("/dashboard")
                 } else {
                     // console.log(abc)
                     // console.log(bcd)

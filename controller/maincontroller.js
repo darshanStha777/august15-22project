@@ -88,3 +88,14 @@ exports.logindata = (req, res, next) => {
     })
     res.redirect("/admin")
 }
+
+
+
+exports.getdelete = (req, res, next) => {
+    darshan.findByIdAndDelete(req.params.id)
+        .then(result => {
+            res.redirect('/adminnews')
+        }).catch(er => {
+            console.log(err)
+        })
+}
